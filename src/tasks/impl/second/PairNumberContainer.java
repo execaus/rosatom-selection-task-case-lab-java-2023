@@ -1,6 +1,9 @@
 package tasks.impl.second;
 
-public class NumbersContainer {
+/**
+ * Хранилище для двух чисел.
+ */
+public class PairNumberContainer {
     public int a = 2;
     public int b = 4;
 

@@ -1,7 +1,9 @@
 package tasks.impl.third.linked_list;
 
-import java.util.ArrayList;
-
+/**
+ * Односвязный список с динамическим типом элементов.
+ * @param <ValueType> тип элементов коллекции.
+ */
 public class LinkedList<ValueType> {
     private LinkedListNode<ValueType> head;
     private LinkedListNode<ValueType> tail;
@@ -11,6 +13,11 @@ public class LinkedList<ValueType> {
         this.tail = null;
     }
 
+    /**
+     * Добавить значение в конец списка.
+     * @param value новое значение.
+     * @return измененный односвязный список.
+     */
     public LinkedList<ValueType> append(ValueType value) {
         var node = new LinkedListNode<ValueType>(value);
 
@@ -45,6 +52,9 @@ public class LinkedList<ValueType> {
         return str.toString();
     }
 
+    /**
+     * Инвертирует односвязный список.
+     */
     public void reverse() {
         if (this.head == null) {
             return;
