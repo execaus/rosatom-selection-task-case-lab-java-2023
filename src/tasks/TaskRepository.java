@@ -2,6 +2,7 @@ package tasks;
 
 import tasks.impl.first.FirstTask;
 import tasks.impl.second.SecondTask;
+import tasks.impl.third.ThirdTask;
 
 public class TaskRepository {
     private final Task[] tasks;
@@ -10,6 +11,7 @@ public class TaskRepository {
         this.tasks = new Task[] {
             new FirstTask(),
             new SecondTask(),
+            new ThirdTask(),
         };
     }
     
